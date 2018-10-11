@@ -1,0 +1,13 @@
+<div class="mainContainer">
+  <div class="container-fluid" style="padding:0px;margin: 0px">
+    <app-searchbox (MovieData)="searchMovieData($event)"></app-searchbox>
+    <div class="row" style="margin: 0;">
+      <div class="col-md-3 anyClass"  *ngIf="result">
+        <app-child (MovieReviewData)="totaldata($event)" [textInptData]="result" style="cursor: pointer" title="Go to Movie Details"></app-child>
+      </div>
+      <div class="col-md-9" style=" margin-top: -18px;" *ngIf="ToatalmovieData ">
+        <detail-View [ToatalmovieData]="ToatalmovieData"> </detail-View>
+      </div>
+    </div>
+  </div>
+</div>

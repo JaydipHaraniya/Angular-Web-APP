@@ -1,0 +1,16 @@
+
+  <div class="container-fluid header-section bg">
+      <div class="row" style="margin:0px">
+        <img src="assets/movielogo.jpg"  style="cursor: pointer;height: 107px;" title="search Movie ">
+        <div class="col-md-4">
+          <form class="example-form" style="margin: 41px 0px 0px 179%;">
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="Search Movie Name .." #mySearchInput 
+              (keyup)="searchMovieData(mySearchInput.value)" name="search">
+            </mat-form-field>
+          </form>
+        </div>
+      </div>
+      <img src="assets/movieWallpaper.jpg" style="width:100%;height: 682px; margin:0px" *ngIf="image == true" title="Search Your Favorite Music in search Area">
+    </div>
+    

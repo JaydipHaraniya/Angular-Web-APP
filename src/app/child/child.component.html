@@ -1,0 +1,12 @@
+<div class="container-fluid p-2 " *ngFor="let loc of textInptData" (click)="detailView(loc)">
+    <div class="col-12">
+        <div class="card" style="background-color: bisque;  border-color: black; ">
+            <img class="card-img-top" height="200" width="100" src="https://image.tmdb.org/t/p/w200{{loc.poster_path}}"
+                alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Title Of Movie: {{loc.title}} </h5>
+                <h5 class="card-title">Rating: {{loc.vote_average}} </h5>
+            </div>
+        </div>
+    </div>
+</div>

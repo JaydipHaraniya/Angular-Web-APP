@@ -1,0 +1,14 @@
+
+.anyClass {
+  height:150px;
+   /* overflow-y: scroll;  */
+  height: 100vh;
+  overflow: auto;
+  width: 44vh;
+}
+
+.bg{
+  background-image: url("https://dji16gnzvk5qv.cloudfront.net/appscriphome/mainBG.png");
+  height: 100%;
+  width: 100%;
+}
